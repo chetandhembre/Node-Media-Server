@@ -228,7 +228,7 @@ class NodeRtmpClient {
     this.socket.on('error', this.onSocketError.bind(this));
     this.socket.on('close', this.onSocketClose.bind(this));
     this.socket.on('timeout', this.onSocketTimeout.bind(this));
-    this.socket.setTimeout(60000);
+    this.socket.setTimeout(2000);
   }
 
   stop() {
